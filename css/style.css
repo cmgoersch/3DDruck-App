@@ -21,10 +21,49 @@ h1 {
     text-align: center;
 }
 
+.name {
+    margin: 2rem;
+}
+
 .demo {
     text-align: center;
     font-size: 4rem;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Nutzt die volle Höhe des Viewports */
+}
+
+.text-block {
+    position: relative;
+    width: 300px; /* Breite des Textblocks */
+    padding: 10px; /* Abstand um den Text */
+    border: 6px solid white; /* Rahmen des Textblocks */
+    border-radius: 20px; /* Abgerundete Ecken */
+    background-color: #8BC34A; /* Hintergrundfarbe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für 3D-Effekt */
+    /* Weitere Stildefinitionen */
+}
+
+.text-block input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white; /* Farbe des Texts */
+    font-size: 20px; /* Größe des Texts */
+    text-align: center; /* Text zentrieren */
+}
+
+.text-block input::placeholder {
+    color: white; /* Farbe des Platzhaltertexts */
+    opacity: 1; /* Platzhaltertext nicht ausblenden */
+}
+
+
 
 .form {
     text-align: center;
