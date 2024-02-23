@@ -1,8 +1,17 @@
 body {
+    background-image: url('/src/svg/background.svg');
+  background-size: cover; /* oder 100% 100%, um den gesamten Hintergrund zu füllen */
+  background-repeat: no-repeat;
+  background-position: center center; /* Zentriert das Bild */
+  background-size: auto 100%; /* Passt die Höhe an und behält die Proportionen bei */
+  background-attachment: fixed; /* Optional: Hält das Bild beim Scrollen fest */
+    background-color: #333;
+    color:white;
     font-family: Arial, sans-serif;
     margin: 40px;
 }
 
 h1 {
-    color: #333;
+    color: white;
+    text-align: center;
 }
