@@ -5,7 +5,7 @@ body {
   background-position: center center; /* Zentriert das Bild */
   background-size: auto 100%; /* Passt die Höhe an und behält die Proportionen bei */
   background-attachment: fixed; /* Optional: Hält das Bild beim Scrollen fest */
-    background-color: #333;
+    background-color: #1a1a1a;
     color:white;
     font-family: Arial, sans-serif;
     margin: 40px;
@@ -14,4 +14,43 @@ body {
 h1 {
     color: white;
     text-align: center;
+}
+
+.question {
+    color: white;
+    text-align: center;
+}
+
+.demo {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.form {
+    text-align: center;
+}
+
+.input {
+    margin-top: 1rem;
+    background-color: #1a1a1a;
+    border: gray;
+    border-style: solid;
+    color:  white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button {
+    margin-top: 1rem;
+    background-color: #808080;
+    border: none;
+    color:  #1a1a1a;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
