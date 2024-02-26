@@ -111,11 +111,13 @@ padding: 1rem;
 }
 
 .boxbackground {
+    
     background-color: white;
     border-radius: 3rem;
 }
 .batch {
-    font-size: 3rem;
+    font-size: clamp(16px, 4vw, 32px);
+    /* font-size: 2.4rem; */
     color: #89c23e;
     border: 10px #89c23e;
     border-style: solid;
@@ -160,6 +162,24 @@ padding: 1rem;
                  0px 0px 10px rgba(0,0,0,.2);
   }
   
+  @media (max-width: 768px) {
+    .batch {
+        font-size: 1.6rem; /* Kleinere Schriftgröße für kleinere Geräte */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .batch {
+        font-size: 2rem; /* Mittlere Schriftgröße für Tablets */
+    }
+}
+
+@media (min-width: 1025px) {
+    .batch {
+        font-size: 3rem; /* Größere Schriftgröße für Desktop */
+    }
+}
+
   .batch::after {
     display: block;
     content: "";
