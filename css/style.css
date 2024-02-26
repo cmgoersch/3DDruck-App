@@ -26,53 +26,6 @@ h1 {
     text-align: center;
 }
 
-.name {
-    margin: 2rem;
-}
-
-.demo {
-    text-align: center;
-    font-size: 4rem;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh; 
-}
-
-.text-block {
-    position: relative;
-    width: 300px; 
-    padding: 10px; 
-    border: 6px solid white; 
-    border-radius: 20px; 
-    background-color: #8BC34A; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.text-block input {
-    width: 100%;
-    border: none;
-    outline: none;
-    background: transparent;
-    color: white; 
-    font-size: 20px; 
-    text-align: center; 
-}
-
-.text-block input::placeholder {
-    color: white; /* Farbe des Platzhaltertexts */
-    opacity: 1; /* Platzhaltertext nicht ausblenden */
-}
-
-
-
-.form {
-    text-align: center;
-}
-
 .input {
     margin-top: 1rem;
     background-color: #1a1a1a;
@@ -98,6 +51,44 @@ h1 {
     font-size: 16px;
 }
 
+.button2 {
+    margin-top: 1rem;
+    background-color: white;
+    border: none;
+    color:  #1a1a1a;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button_back {
+margin-top: 1rem;
+background-color: #808080;
+border: none;
+color:  #1a1a1a;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+
+.button:disabled {
+    background-color: #ccc; /* Grau für inaktiven Zustand */
+    color: #666;
+    cursor: not-allowed;
+}
+
+.button:enabled {
+    background-color: #fff; /* Weiß für aktiven Zustand */
+    color: #000;
+    cursor: pointer;
+}
+
+
+
 .nameInput {
     position: absolute;
     top: 180px; 
@@ -112,10 +103,6 @@ h1 {
     width: 200px;
 }
 
-.svgContainer {
-    position: relative;
-    height: 0px; 
-}
 
 .batchbox {
     display: flex;
@@ -176,7 +163,7 @@ padding: 1rem;
   .batch::after {
     display: block;
     content: "";
-    background-color: black;
+    background-color: #1a1a1a;
     position: absolute;
     right: 1em;
     top: 33%;
@@ -186,4 +173,33 @@ padding: 1rem;
     border-radius: 100%;
   }
   
-  
+
+  .print-popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 1; 
+}
+
+.print-popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #1a1a1a;
+    margin: 10% auto; /* Zentriert das Popup */
+    padding: 20px;
+    width: 80%;
+    max-width: 600px; /* Max. Breite des Popups */
+}
+
+  .image {
+    width: 4rem;
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+  }

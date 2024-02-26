@@ -23,14 +23,43 @@
         <p>Gib hier deinen Namen oder <br>
             Spitznamen ein (Max. 12 Zeichen)</p>
     </div>
-    <!-- <form class="form" action="" method="post"> -->
         <div>
-            <input class="input" type="text" id="input" name="eingabe" maxlength="12" placeholder="Name">
+            <input class="input" type="text" id="input" name="eingabe" placeholder="Name" maxlength="12">
+
         </div>
         <div>
             <button class="button" type="submit">Drucken</button>
         </div>
     </form>
+</div>
+<div id="printPopup" class="print-popup">
+    <div class="print-popup-content">
+        <p>So wird dein Namens-Batch aussehen:</p>
+        <div class="batchbox">
+            <div class="boxbackground">
+                <div class="batch">NamePreview</div>
+            </div>
+            </div>
+            <p class="info">Wenn du mit dem Namens-Batch zufrieden bist kannst du hier den Druck freigebem. 
+                Wenn du etwas ändern möchtest gehe auf zurück.</p>
+        <!-- <div class="batch-preview">NamePreview</div> -->
+        <button class="button2" id="releasePrint">Druck freigeben</button>
+        <button class="button_back" id="closePopup">Zurück</button>
+    </div>
+</div>
+<div id="printingPopup" class="print-popup">
+    <div class="print-popup-content">
+        <p>Dein Batch wird gedruckt :)</p>
+        <div class="batchbox">
+            <div class="boxbackground">
+                <div class="batch">NamePreview</div>
+            </div>
+           
+        </div>
+        <p>Behalte den Drucker im Auge ;)</p>
+        <img class="image" src="/src/svg/Drucker.svg" alt="Beschreibung des Bildinhalts">
+   
+    </div>
 </div>
 
     <script src="js/script.js"></script>
