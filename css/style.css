@@ -1,10 +1,10 @@
 body {
     background-image: url('/src/svg/background.svg');
-  background-size: cover; /* oder 100% 100%, um den gesamten Hintergrund zu füllen */
+  background-size: cover; 
   background-repeat: no-repeat;
-  background-position: center center; /* Zentriert das Bild */
-  background-size: auto 100%; /* Passt die Höhe an und behält die Proportionen bei */
-  background-attachment: fixed; /* Optional: Hält das Bild beim Scrollen fest */
+  background-position: center center;
+  background-size: auto 100%; 
+  background-attachment: fixed; 
     background-color: #1a1a1a;
     color:white;
     font-family: Arial, sans-serif;
@@ -17,6 +17,11 @@ h1 {
 }
 
 .question {
+    color: white;
+    text-align: center;
+}
+
+.info {
     color: white;
     text-align: center;
 }
@@ -34,18 +39,17 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh; /* Nutzt die volle Höhe des Viewports */
+    height: 20vh; 
 }
 
 .text-block {
     position: relative;
-    width: 300px; /* Breite des Textblocks */
-    padding: 10px; /* Abstand um den Text */
-    border: 6px solid white; /* Rahmen des Textblocks */
-    border-radius: 20px; /* Abgerundete Ecken */
-    background-color: #8BC34A; /* Hintergrundfarbe */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für 3D-Effekt */
-    /* Weitere Stildefinitionen */
+    width: 300px; 
+    padding: 10px; 
+    border: 6px solid white; 
+    border-radius: 20px; 
+    background-color: #8BC34A; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .text-block input {
@@ -53,9 +57,9 @@ h1 {
     border: none;
     outline: none;
     background: transparent;
-    color: white; /* Farbe des Texts */
-    font-size: 20px; /* Größe des Texts */
-    text-align: center; /* Text zentrieren */
+    color: white; 
+    font-size: 20px; 
+    text-align: center; 
 }
 
 .text-block input::placeholder {
@@ -92,4 +96,23 @@ h1 {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+.nameInput {
+    position: absolute;
+    top: 180px; 
+    left: 154px; 
+    font-family: 'Bevan', sans-serif;
+    font-size: 48px;
+    color: #8CC63F;
+    background: none;
+    border: none;
+
+    outline: none;
+    width: 200px;
+}
+
+.svgContainer {
+    position: relative;
+    height: 0px; 
 }
