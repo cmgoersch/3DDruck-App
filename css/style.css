@@ -116,3 +116,74 @@ h1 {
     position: relative;
     height: 0px; 
 }
+
+.batchbox {
+    display: flex;
+  justify-content: center;
+padding: 1rem;
+}
+
+.boxbackground {
+    background-color: white;
+    border-radius: 3rem;
+}
+.batch {
+    font-size: 3rem;
+    color: #89c23e;
+    border: 10px #89c23e;
+    border-style: solid;
+    border-radius: 0.8em;
+
+    width: min-content;
+    background: none;
+    padding: 0.3em 3em 0.3em 0.5em;
+    position: relative;
+    font-weight: bold;
+    font-family: "Bevan", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+    box-shadow:0px 0px 0 #89c23e,
+                 1px 1px 0 #466320,
+                 2px 2px 0 #466320,
+                 3px 3px 0 #466320,
+                 4px 4px 0 #466320,
+                 5px 5px 0 #466320,
+                 6px 6px 0 #466320,
+                 7px 7px 0 #466320,
+                 8px 8px 0 #466320,
+                 9px 9px 0 #466320,
+                 10px 10px  0 #466320,
+                 11px 11px 10px rgba(0,0,0,0.6),
+                 11px 11px 1px rgba(0,0,0,0.5),
+                 0px 0px 10px rgba(0,0,0,.2);
+    text-shadow: 0px 0px 0 #466320,
+                 1px 1px 0 #466320,
+                 2px 2px 0 #466320,
+                 3px 3px 0 #466320,
+                 4px 4px 0 #466320,
+                 5px 5px 0 #466320,
+                 6px 6px 0 #466320,
+                 7px 7px 0 #466320,
+                 8px 8px 0 #466320,
+                 9px 9px 0 #466320,
+                 10px 10px  0 #466320,
+                 11px 11px 10px rgba(0,0,0,0.6),
+                 11px 11px 1px rgba(0,0,0,0.5),
+                 0px 0px 10px rgba(0,0,0,.2);
+  }
+  
+  .batch::after {
+    display: block;
+    content: "";
+    background-color: black;
+    position: absolute;
+    right: 1em;
+    top: 33%;
+    bottom: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+  }
+  
+  
